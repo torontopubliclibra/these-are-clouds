@@ -1,0 +1,47 @@
+// import variables
+@use "variables" as *;
+
+// font import
+@font-face {
+  font-family: "Moderustic";
+  src: url(/fonts/Moderustic/Moderustic-VariableFont_wght.ttf) format("truetype");
+  font-display: swap;
+}
+
+* {
+  font-size: 18px;
+}
+
+body, header, footer, button, select, a {
+  text-transform: lowercase;
+  color: $black;
+}
+
+a {
+  /* responsive to tablet */
+  @media only screen and (max-width: $tablet) {
+    color: $color2;
+  }
+}
+
+// default typography
+body, button, input, select {
+  font-family: "Moderustic", sans-serif;
+  font-display: swap;
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+footer {
+  p, a {
+    font-size: 0.8rem;
+    max-width: 1000px;
+    margin: 0;
+    /* responsive to tablet */
+    @media only screen and (max-width: $tablet) {
+      font-size: 0.75rem;
+    }
+  }
+}
