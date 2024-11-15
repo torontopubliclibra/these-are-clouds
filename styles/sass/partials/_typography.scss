@@ -14,13 +14,13 @@
 
 body, header, footer, button, select, a {
   text-transform: lowercase;
-  color: $black;
+  color: $white;
 }
 
 a {
   /* responsive to tablet */
   @media only screen and (max-width: $tablet) {
-    color: $color2;
+    color: $color1;
   }
 }
 

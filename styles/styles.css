@@ -241,7 +241,7 @@ html {
 
 body, header, footer, button, select, a {
   text-transform: lowercase;
-  color: #282b2c;
+  color: #c0c5d2;
 }
 
 a {
@@ -249,7 +249,7 @@ a {
 }
 @media only screen and (max-width: 970px) {
   a {
-    color: #3f3865;
+    color: #84A59D;
   }
 }
 
@@ -274,35 +274,28 @@ footer p, footer a {
   }
 }
 
-@keyframes fadeInZoomOut {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 html {
-  background: #c0c5d2;
+  background: #282b2c;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  gap: 20px;
 }
 
 .cloud-pic {
-  margin: 0;
-  width: 100vw;
-  height: calc(100vh - 90px);
+  margin: 0 auto;
+  padding: 0;
+  width: calc(100vw - 40px);
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 footer {
-  height: 75px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -310,4 +303,10 @@ footer {
   align-items: center;
   gap: 10px;
   padding: 25px;
+  /* responsive to tablet */
+}
+@media only screen and (max-width: 970px) {
+  footer {
+    padding-top: 0;
+  }
 }
