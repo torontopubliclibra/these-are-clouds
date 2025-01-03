@@ -32,4 +32,8 @@ footer {
     gap: 10px;
     padding: 25px;
     padding-top: 20px;
+
+    @media only screen and (max-width: $tablet) {
+        padding-top: 0;
+    }
 }
